@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices</title>
+    <link rel="stylesheet" href="../app.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div>
+        <span class="finstreet logo"><a href="https://hodlinfo.com">HODLINFO</a>.com</span>
+
+        <label class="switch btn">
+            <input id="colorBox" type="checkbox" checked onchange="clr(this)">
+            <span class="slider round"></span>
+        </label>
+        <a href="https://hodlinfo.com/connect/telegram"><button class="btn btn1 telegram">
+                <img src="assets/download.png" width="20px">Connect Telegram
+            </button></a>
+        <p class=finstreet>Powered By <span><a href="https://finstreet.in"> Finstreet</a></span></p>
+
+        <div>
+            <table>
+                <thead class="thead">
+                    <tr>
+                        <th>
+                            <h4>#</h4>
+                        </th>
+                        <th>
+                            <h4>name</h4>
+                        </th>
+                        <th>
+                            <h4>Last</h4>
+                        </th>
+                        <th>
+                            <h4>Buy / Sell Price</h4>
+                        </th>
+                        <th>
+                            <h4>volume</h4>
+                        </th>
+                        <th>
+                            <h4>base_unit</h4>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for(let i=0;i<10;i++) { %>
+                        <tr>
+                            <td class="first">
+                                <%= i+1 %>
+                            </td>
+                            <td>
+                                <%= ok[i].name %>
+                            </td>
+                            <td>
+                                &#8377; <%= ok[i].last %>
+                            </td>
+                            <td>
+                                &#8377; <%= ok[i].buy %> / &#8377; <%= ok[i].sell %>
+                            </td>
+                            <td>
+                                <%= ok[i].volume %>
+                            </td>
+                            <td class="last">
+                                <%= ok[i].base_unit %>
+                            </td>
+                        </tr>
+                        <% } %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>

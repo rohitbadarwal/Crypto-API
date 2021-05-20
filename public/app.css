@@ -1,0 +1,148 @@
+
+body {
+    background-color: #191d28;
+    color: #808288;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    /* color: #3dc6c1;
+    color: #dcdcde;
+    color : #646568 */
+}
+
+
+ .finstreet {
+    margin-bottom: 0px;
+    margin-top:0px;
+    margin-left: 38px;
+    font-size: 1.2vw;
+}
+
+.logo {
+    font-size:3vw;
+}
+
+a {
+    text-decoration: none;
+    color: #3dc6c1;
+}
+
+.com {
+    display: inline;
+    margin-bottom: 0px;
+    margin-top:0px;
+    font-weight: 500;
+    font-size: 1.3vw;
+}
+
+.btn {
+    float:right;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 50px;
+  margin-top:32px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d3d5d8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #34c6c1;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2e3241;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.btn1 {
+    display: inline-block;
+    font-weight: 400;
+    background-color: #34c6c1;
+    color: white;
+    cursor:pointer;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1vw;
+    line-height: 1.5;
+    border-radius: 1rem;
+}
+
+.telegram {
+    margin-right: 30px;
+    margin-top: 32px;
+}
+
+table {
+    text-align: center!important;
+    width: 100%;
+    padding: 0px;
+    font-size: 2.5vw;
+    border-spacing: 0 0.5em;    
+}
+
+thead {
+  margin-bottom:0px;
+}
+
+td {
+  color:white;
+  font-size: 1.7vw;
+}
+
+tbody tr {
+  background-color: #2e3241;  
+} 
+
+.first {
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+}
+
+.last {
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+}
