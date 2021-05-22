@@ -1,4 +1,4 @@
-# QuadB_Project
+# Crypto API
 Fetching and Displaying top 10 results from 'https://api.wazirx.com/api/v2/tickers'
 
 
